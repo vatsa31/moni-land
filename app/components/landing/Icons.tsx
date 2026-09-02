@@ -23,6 +23,7 @@ export type IconName =
   | 'replay'
   | 'shield'
   | 'spark'
+  | 'tap'
 
 export function Icon({
   name,
@@ -84,6 +85,8 @@ export function Icon({
       return <svg {...common}><path d="M12 3 20 6v5c0 5-3.4 8.2-8 10-4.6-1.8-8-5-8-10V6l8-3Z" /><path d="m8.5 12 2.2 2.2 4.8-5" /></svg>
     case 'spark':
       return <svg {...common}><path d="m12 2 1.6 5.4L19 9l-5.4 1.6L12 16l-1.6-5.4L5 9l5.4-1.6L12 2ZM19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z" /></svg>
+    case 'tap':
+      return <svg {...common}><path d="M12 11V5a1 1 0 0 1 2 0v6h1a2 2 0 0 1 2 2v4a4 4 0 0 1-4 4h-2a3 3 0 0 1-3-3v-3" /><path d="M8 11V9a1 1 0 0 1 2 0v2M6 12V9a1 1 0 0 1 2 0v3M4 13V10a1 1 0 0 1 2 0v3" /><circle cx="12" cy="8" r="1" fill="currentColor" stroke="none" /></svg>
   }
 }
 
