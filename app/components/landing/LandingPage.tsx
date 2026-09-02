@@ -1,6 +1,7 @@
 import { AnimatePresence, MotionConfig, motion, useInView, useReducedMotion } from 'motion/react'
 import { useEffect, useRef, useState } from 'react'
 import { AppPreview } from './AppPreview'
+import { BackTapSection } from './BackTap'
 import { Icon, MoniMark } from './Icons'
 import { Pressable, Reveal, appEase } from './Motion'
 import { QuickCaptureSection } from './QuickCapture'
@@ -20,6 +21,7 @@ function Header() {
           <a href="#capture">Quick capture</a>
           <a href="#budgets">Budgets</a>
           <a href="#automation">Automation</a>
+          <a href="#shortcut">Back Tap</a>
           <a href="#privacy">Privacy</a>
         </nav>
 
@@ -353,7 +355,7 @@ function EverydayFeatures() {
     <section className="everyday" id="features">
       <div className="section-shell">
         <Reveal className="everyday__heading">
-          <span className="section-index">04 · The everyday details</span>
+          <span className="section-index">05 · The everyday details</span>
           <h2>Everything else is<br /><em>quietly where it should be.</em></h2>
         </Reveal>
 
@@ -414,7 +416,7 @@ function PrivacyStory() {
       <div className="section-shell privacy__grid">
         <div className="privacy-copy">
           <Reveal>
-            <span className="section-index section-index--dark">05 · Private by architecture</span>
+            <span className="section-index section-index--dark">06 · Private by architecture</span>
             <h2>There is no cloud<br /><em>to trust.</em></h2>
             <p>
               moni has no backend, no account system, and no bank connection.
@@ -512,6 +514,7 @@ export function LandingPage() {
           <QuickCaptureSection />
           <BudgetStory />
           <AutomationStory />
+          <BackTapSection />
           <EverydayFeatures />
           <PrivacyStory />
           <FinalCallout />
